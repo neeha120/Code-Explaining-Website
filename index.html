@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <title>Decode the Codes</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div>
+    <nav class="navbar">
+        <div class="left">
+          <h1>Decode the Codes</h1>
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              <a onclick="document.getElementById('featureCon').scrollIntoView()"> Features </a>
+            </li>
+            <li><a onclick="document.getElementById('faq').scrollIntoView()">FAQs</a></li>
+            <li><a onclick="document.getElementById('contact').scrollIntoView()">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="tagClass">
+        <span class="tagline" style="--n:70">
+            Explaining code in more faster and efficient way with AI.
+        </span>
+      </div>
+
+      <div class="feature_name">Get explaination of any code with simple click!</div>
+      <div class="featureCon" id="featureCon">
+        <div class="feature" id="feat1">
+          <img src="../static/codeImage.png" alt="Code image">
+        </div>
+        <div class="featureArrow" id="feat3">
+          <iconify-icon icon="dashicons:arrow-right-alt2" style="color: #2fff89;" width="100" height="100"></iconify-icon>
+        </div>
+        <div class="feature" id="feat2">
+          <img src="../static/codeOutput.png" alt="Code output">
+        </div>
+    </div>
+    <form method="post">
+    <div class="working" id="working">
+      <h2 class="workingTitle">Use it here!</h2>
+      <p class="note">Note: Responses are AI generated, if you are not happy with answer, just run program again. 
+        Peace &#9774; &#128522;
+      </p>
+      <div class="lang_define">
+        <label for="lang">Name of programming language: </label><br>
+        <input type="text" name="lang" placeholder="try: 'Python'" autocomplete="off">
+      </div>
+      <div class="workCon">
+        <div class="input"><textarea name="input" id="input" cols="40" rows="20">{{ code }}</textarea></div>
+        <div class="click"><button type="submit">Hit!</button></div>
+        <div class="output">{% for i in response %}{{i}}.<br>{% endfor %}</div>
+      </div>
+    </div>
+  </form>
+    <div class="faq" id="faq">
+      <h2>FAQs</h2>
+      <details>
+        <summary>
+          <h3>What is the pricing of this product?</h3>
+        </summary>
+        <div>
+          <p>It is completely free!!</p>
+        </div>
+      </details>
+      
+      <details>
+        <summary>
+          <h3>How does the product works?</h3>
+        </summary>
+        <div>
+          <p>It is fine-tuned model of Text-DaVinci-003 by OpenAI. As it is fine tuned for code, it gives good results for all programming languages.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <h3>How to use the system to get optimized results?</h3>
+        </summary>
+        <div>
+          <p>The system can work on any piece of code but it is advised to give specific function as input, so that our model can give very specific output and does not play around with the general problem.</p>
+        </div>
+      </details>
+    
+      <div class="contact" id="contact">
+        Contact us at <a href="https://twitter.com/nandanpadia" target="_blank">Twitter</a>
+      </div>
+  </body>
+  <script src="{{url_for('static', filename='main.js')}}"></script>
+</html>

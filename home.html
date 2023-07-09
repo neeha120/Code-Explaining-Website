@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script> -->
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}" />
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+      <div class="left">
+        <ul>
+          <li>DecodeTheCodes</li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+            <a href="#"> Features </a>
+          </li>
+          <li><a onclick="document.getElementById('plan').scrollIntoView()">FAQs</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- TAGLINES -->
+    <div class="tagline">
+      <div class="tagline1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt explicabo
+        saepe natus facilis? Ducimus dolorum doloribus voluptas, ullam veniam
+        quos?
+      </div>
+      <div class="tagline2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic totam iusto
+        iure dolor itaque, consequuntur placeat eaque nesciunt animi ipsam
+        voluptates. Quam, necessitatibus. Fuga dolorum debitis animi eligendi
+        consequuntur. Soluta, doloribus. Labore, cupiditate ipsa.
+      </div>
+      <div class="tagline3">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+        distinctio placeat possimus officiis! Recusandae doloribus blanditiis,
+        unde cumque illum mollitia!
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="feature">
+      <div class="feature1_name">Code to Explanantion</div>
+      <div class="feature1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati,
+        aspernatur. Sed et eligendi eveniet, quae alias voluptatum obcaecati
+        nihil laborum perspiciatis ducimus deleniti facere adipisci dignissimos
+        explicabo, accusantium ut provident assumenda deserunt sit, voluptatibus
+        aspernatur. Eum, quibusdam? Corporis in et, quae soluta maiores
+        perspiciatis labore ex neque, itaque eaque odio aliquid quod eius. Quo
+        animi fugit fugiat iste doloremque assumenda maiores dolor incidunt
+        obcaecati voluptate dolore consectetur illo quisquam sunt, quod at quis
+        nulla iusto cumque recusandae nostrum aperiam itaque mollitia? Facere
+        deserunt incidunt mollitia debitis ratione soluta sed dolore beatae at
+        error! Quo voluptates architecto molestias fuga aut in nam nostrum. Id
+        praesentium minima incidunt neque voluptas. Excepturi laborum amet sed
+        maxime voluptas animi deleniti voluptate quia voluptatem! Quo dolores et
+        dicta ipsam voluptates quidem asperiores sapiente accusamus vitae
+        recusandae animi illo, harum labore blanditiis eius quasi tempore
+        consequuntur maiores dolorem perferendis neque porro beatae nulla.
+        Mollitia, rerum nisi.
+      </div>
+      <div class="feature2_name">Explanantion to Code</div>
+      <div class="feature2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+        tempora natus deserunt, cum eos optio repudiandae officiis asperiores.
+        Voluptates fugiat placeat ab provident, exercitationem pariatur. Odio
+        nam provident omnis odit architecto aliquam necessitatibus voluptatem
+        deserunt ab quasi ipsum, labore ullam dolor, impedit neque consequuntur
+        accusamus vero, inventore et a in suscipit? Corrupti quasi, ullam,
+        molestias aperiam necessitatibus sequi libero dolorum est ex eum
+        asperiores reiciendis, eos quis unde explicabo maiores error?
+        Exercitationem commodi magnam voluptates reiciendis unde debitis nemo
+        dolore! Optio veritatis fugit vel delectus repudiandae dolorum iusto
+        deserunt mollitia, ab et id accusamus necessitatibus, ducimus facere
+        quam ad a consectetur veniam dolorem quibusdam numquam non, impedit
+        reiciendis voluptas. Explicabo eveniet iure accusantium molestiae rerum
+        ad quo mollitia magni expedita voluptas iste, pariatur dolores
+        asperiores voluptatum temporibus necessitatibus aspernatur ipsa. Vitae
+        labore doloribus cum, laboriosam temporibus qui commodi quae pariatur
+        exercitationem eos fugit delectus? Aperiam harum ducimus cum nam! Autem.
+      </div>
+    </div>
+
+    <!-- PRICING -->
+    <div class="plan" id="plan">
+      <div class="plan_price">Lorem, ipsum.</div>
+      <div class="plan_duration">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus?
+      </div>
+      <div class="plan_includes">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        perferendis iure ullam dolorem, itaque in omnis iusto corrupti odio
+        obcaecati molestiae optio eum. Expedita magni vitae autem eligendi,
+        sequi laudantium animi corporis dignissimos quod.
+      </div>
+    </div>
+  </body>
+  <script src="{{url_for('static', filename='main.js')}}"></script>
+  </html>
